@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3126356491037779388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3126356491037779394}
+  - component: {fileID: 3126356491037779389}
+  - component: {fileID: 3126356491037779395}
+  - component: {fileID: 959328034}
+  - component: {fileID: 689487700}
+  m_Layer: 0
+  m_Name: GameContoller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3126356491037779394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126356491037779388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7358644, y: 1.085457, z: -17.168945}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3126356491037779389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126356491037779388}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c1b884de6aced49823099cbd767435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPoolSize: 5
+  boxPrefab: {fileID: 7410845915009234494, guid: 01ac0bb229188e64a836b8cb91440164,
+    type: 3}
+  spawnRate: 6
+  boxMin: 18
+  boxMax: 30
+  spawnYposition: -1.8
+  boxXpos: 0
+--- !u!114 &3126356491037779395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126356491037779388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a2b5344d50c3444baf96cbd8382ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverText: {fileID: 0}
+  scoreText: {fileID: 0}
+  gameOver: 0
+  scrollSpeed: -5
+--- !u!114 &959328034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126356491037779388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010ec15ec432532478a1778eedd43c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPoolSize: 5
+  enemyPrefab: {fileID: 2602881377699403107, guid: 1d45a669f3dcb3543b4afe292c474637,
+    type: 3}
+  enemyPoolPosition: {x: -27, y: -25}
+  spawnRate: 13
+  enemyMin: 19
+  enemyMax: 37
+  spawnYposition: -1.8
+--- !u!114 &689487700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126356491037779388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9507b7058877d42bd84cc847733c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectiblePoolSize: 5
+  collectiblePrefab: {fileID: 5289556196342927632, guid: 7c1d4efc92e5f2f4a95706baea836b2d,
+    type: 3}
+  CollectiblespawnRate: 21
+  collectibleMin: 19
+  collectibleMax: 37
+  spawnYposition: -1
+  collectibleXpos: 0
